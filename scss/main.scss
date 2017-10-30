@@ -1,0 +1,21 @@
+/**
+ * Signal Widget Announcement Styles
+ *
+ * These are the standard themes available in signal-widget.com
+ *
+ * info:    "Info (green)"
+ * alert:   "Alert (yellow)"
+ * urgent:  "Urgent (red)"
+ * neutral: "Neutral (gray)"
+ * custom:  "Custom (add own css)"
+ *
+ */
+$CD_primary: rgb(64, 96, 106);
+
+@import "theme-no-style";
+@import "theme-standard";
+@import "theme-bootstrap3";
+@import "theme-bootstrap4";
+@import "theme-material";
+@import "theme-foundation";
+

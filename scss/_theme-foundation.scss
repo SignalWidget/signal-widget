@@ -1,0 +1,30 @@
+//
+// bootstrap 4 theme
+//
+.signal-widget.foundation {
+  position: relative;
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  border: 1px solid rgba(10, 10, 10, 0.25);
+  border-radius: 0;
+  background-color: white;
+  color: #0a0a0a;
+  font-weight: normal;
+  line-height: 1.5;
+  &.neutral {
+    background-color: #eaeaea;
+    color: #0a0a0a;
+  }
+  &.info {
+    background-color: #e1faea;
+    color: #0a0a0a;
+  }
+  &.alert {
+    background-color: #fff3d9;
+    color: #0a0a0a;
+  }
+  &.urgent {
+    background-color: #f7e4e1;
+    color: #0a0a0a;
+  }
+}

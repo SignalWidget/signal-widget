@@ -1,0 +1,73 @@
+//
+// default theme
+//
+.signal-widget.standard {
+  $color: rgba(200, 200, 200, 0.8);
+  padding: 0.7rem;
+  margin: 0.7rem;
+  border-radius: 2px;
+  position: relative;
+  padding-left: 4rem;
+  &::before {
+    background-image: url("data:image/svg+xml,%3Csvg version='1.2' baseProfile='tiny' xmlns='http://www.w3.org/2000/svg' width='40' height='160' viewBox='0 0 40 160'%3E%3Ccircle fill='none' stroke='%2395C895' stroke-width='2' stroke-miterlimit='10' cx='20' cy='60' r='17'/%3E%3Cpath fill='none' stroke='%23AEAC2A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' d='M36.2 114.4c1 2 0 3.6-2.2 3.6H6c-2.2 0-3.2-1.6-2.2-3.6l14.4-28.8c1-2 2.6-2 3.6 0l14.4 28.8z'/%3E%3Cpath fill='none' stroke='%23C83022' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' d='M20 130v12'/%3E%3Ccircle fill='%23C83022' cx='20' cy='148' r='2'/%3E%3Cpath fill='none' stroke='%23C83022' stroke-width='2' stroke-miterlimit='10' d='M12 159L1 148v-16l11-11h16l11 11v16l-11 11z'/%3E%3Cpath fill='none' stroke='%23333' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' d='M20 94v12'/%3E%3Ccircle fill='%23333' cx='20' cy='112' r='2'/%3E%3Cpath fill='none' stroke='%23333' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' d='M20 67v-7'/%3E%3Cpath fill='none' stroke='%234D4D4D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' d='M20 3v2c6 0 10.5 13.5 10.5 23 2 0 3.5 2 3.5 4H20m0-29v2C14 5 9.5 18.5 9.5 28c-2 0-3.5 2-3.5 4h14m-5 3s2 3 5 3 5-3 5-3'/%3E%3Cpath fill='none' d='M0 0h40v160H0z'/%3E%3Ccircle fill='%23333' cx='20' cy='54' r='2'/%3E%3C/svg%3E");
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 12px;
+    top: 10px;
+  }
+  @mixin doit($color) {
+    background:
+    linear-gradient(-45deg, $color, lighten($color, 10%)),
+    $color;
+    border: 1px solid darken($color, 20%);
+    box-shadow:
+      3px 3px 7px desaturate(darken($color, 10%), 60%),
+      inset 0 0 0 4px rgba(255, 255, 255, 0.22);
+  }
+  &.neutral {
+    @include doit(rgba(200, 200, 200, 0.8));
+  }
+  &.info {
+    @include doit(rgba(149, 200, 149, 0.8));
+    &::before {
+      background-position-y: -40px;
+    }
+  }
+  &.alert {
+    @include doit(rgba(200, 198, 68, 0.8));
+    &::before {
+      background-position-y: -80px;
+    }
+  }
+  &.urgent {
+    @include doit(rgba(200, 48, 34, 0.8));
+    &::before {
+      background-position-y: -120px;
+    }
+    .signal-widget-credits {
+      opacity: 0.6;
+      a {
+        color: darken($CD_primary, 20%);
+      }
+    }
+  }
+
+  p {
+    margin: 0.3rem 0;
+  }
+  .signal-widget-credits {
+    text-align: right;
+    font-size: 0.7rem;
+    opacity: 0.4;
+    &:hover {
+      opacity: 1;
+    }
+    a {
+        color: $CD_primary;
+    }
+  }
+}
+
+

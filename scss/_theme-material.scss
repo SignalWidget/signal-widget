@@ -1,0 +1,49 @@
+//
+// Material Design
+//
+.signal-widget.material {
+  position: relative;
+  margin: .5rem 0 1rem 0;
+  background-color: #e0e0e0;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+      0 1px 5px 0 rgba(0, 0, 0, 0.12),
+      0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 24px;
+  border: none;
+
+  &.neutral {
+    background: #e1f5fe;
+    color: #01579b;
+  }
+  &.info {
+    color: #1b5e20;
+    background-color: #c8e6c9;
+  }
+  &.alert {
+    background: #ffecb3;
+    color: #ff6f00;
+  }
+  &.urgent {
+    color: #fafafa;
+    background-color: #c62828;
+    .signal-widget-credits {
+      a {
+        color: lighten($CD_primary, 70%);
+      }
+    }
+  }
+  .signal-widget-credits {
+    opacity: 0.5;
+    a {
+      color: darken($CD_primary, 20%);
+    }
+  }
+
+}

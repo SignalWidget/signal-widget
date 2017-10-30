@@ -1,6 +1,9 @@
 
 # Signal Widget Client Customization Library for Web Developers
 
+[Signal Widget](https://www.signal-widget.com) makes it easy to publish announcements
+on your website. 
+
 [Signal Widget](https://www.signal-widget.com/use-cases) already ships with a 
 few classical themes like Bootstrap, Material and Foundation.
 

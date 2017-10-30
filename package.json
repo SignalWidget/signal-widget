@@ -1,0 +1,26 @@
+{
+  "name": "signal-widget",
+  "version": "1.0.0",
+  "description": "Signal Widget announcement customizations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SignalWidget/signal-widget.git"
+  },
+  "keywords": [
+    "announcement",
+    "scss",
+    "webpack",
+    "theme",
+    "build"
+  ],
+  "author": "Signal Widget <support@signal-widget.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SignalWidget/signal-widget/issues"
+  },
+  "homepage": "https://github.com/SignalWidget/signal-widget#readme"
+}
